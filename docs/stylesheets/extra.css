@@ -1,0 +1,21 @@
+:root {
+  --md-primary-fg-color:        #b5651d;
+}
+[data-md-color-scheme="slate"] {
+  --md-hue: 225; 
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background-color: var(--md-primary-fg-color);
+  border-bottom: 0.10rem solid rgba(0, 0, 0, 0.4);
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: rgba(70, 45, 25, 0.4);
+}
+
+
+.md-tabs__list:first-child {
+    margin-left: 23%;
+}
+

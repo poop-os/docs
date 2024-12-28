@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "poop-docs"
+version = "0.1.0"
+description = "poopOS site using MkDocs"
+authors = ["Joetroll <joetroll@proton.me>"]
+license = "BSD-3 Clause"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.49"
+pymdown-extensions = "^10.12"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+

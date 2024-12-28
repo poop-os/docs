@@ -1,0 +1,41 @@
+site_name: PoopOS
+site_url: https://example.org
+theme:
+  name: material
+  palette:
+      scheme: slate
+      primary: custom
+      accent: custom
+  logo: assets/logo.png
+  favicon: assets/logo.png
+
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.prune
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - navigation.instant.progress
+    - navigation.tracking
+
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - md_in_html
+  - footnotes
+  - tables
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+
+nav:
+  - Home: index.md
+
+
+
