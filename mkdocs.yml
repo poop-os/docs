@@ -3,9 +3,9 @@ site_url: https://example.org
 theme:
   name: material
   palette:
-      scheme: slate
-      primary: custom
-      accent: custom
+    scheme: slate
+    primary: custom
+    accent: custom
   logo: assets/logo.png
   favicon: assets/logo.png
 
@@ -21,7 +21,6 @@ theme:
     - navigation.instant.progress
     - navigation.tracking
 
-
 extra_css:
   - stylesheets/extra.css
 
@@ -33,9 +32,12 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
-  - Home: index.md
-
-
-
+  - Home:
+      - Home: index.md
+  - Install:
+      - Install: install/README.md
