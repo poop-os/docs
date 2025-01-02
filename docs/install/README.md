@@ -1,6 +1,6 @@
 ---
 icon: material/download
-title: Download
+title: Install
 glightbox: false
 hide:
   - toc

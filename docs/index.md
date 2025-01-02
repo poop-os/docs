@@ -18,6 +18,8 @@ hide:
 <h1 style="margin-bottom: 0.2em;">poopOS</h1>
 --------
 
-*A source-based distro forked from KISS Linux with a more secure and faster package manager.*
+*A source-based distro based on KISS Linux with a more featureful package manager.*
 
-[:material-download: Install PoopOS](install/README.md){ .md-button data-umami-event="Install Button" }
+[:material-download: Install PoopOS](install/README.md){ .md-button }
+[:material-information: About PoopOS](about.md){ .md-button }
+[:material-frequently-asked-questions: FAQ](faq.md){ .md-button }

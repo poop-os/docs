@@ -13,7 +13,6 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.sections
-    - navigation.prune
     - toc.follow
     - navigation.top
     - search.suggest
@@ -39,5 +38,7 @@ markdown_extensions:
 nav:
   - Home:
       - Home: index.md
+      - About: about.md
+      - FAQ: faq.md
   - Install:
       - Install: install/README.md
