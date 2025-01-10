@@ -1,5 +1,8 @@
+site_description: "PoopOS main website."
 site_name: PoopOS
-site_url: https://example.org
+site_url: https://poop-os.github.io
+repo_url: https://codeberg.org/poop-os/poop-os.github.io
+repo_name: poop-os/poop-os.github.io
 theme:
   name: material
   palette:
@@ -19,6 +22,7 @@ theme:
     - search.highlight
     - navigation.instant.progress
     - navigation.tracking
+    - content.tooltips
 
 extra_css:
   - stylesheets/extra.css
@@ -34,6 +38,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.snippets:
+      base_path: ["./news"]
 
 nav:
   - Home:
@@ -42,3 +48,19 @@ nav:
       - FAQ: faq.md
   - Install:
       - Install: install/README.md
+  - Blog:
+      - Blog: blog/index.md
+
+plugins:
+  - macros
+  - blog:
+      post_excerpt: required
+  - rss:
+      abstract_delimiter: <!-- more -->
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+      use_material_blog: true
