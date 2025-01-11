@@ -3,9 +3,6 @@ date: 2024-01-31
 authors:
   - joetroll
 title: "Hello World"
-categories:
-  - v2
-  - stable
 ---
 
 # Hello world!
